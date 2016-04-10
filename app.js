@@ -19,8 +19,14 @@
 		$(this).focus();
 
 		$('.jiggy-box').css({
-			'z-index': 0
+			'z-index': 0,
+			'border': 'none'
 		});
+
+		$(this).css({
+			'border': '5px solid gray'
+		});
+
 
 		$(this).on('keydown.ctrl_q', function(e) {
 			console.log(e)
