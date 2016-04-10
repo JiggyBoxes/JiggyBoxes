@@ -1,10 +1,22 @@
 (function() {
 
 	var marginTop = ($('.jiggy-boxes').height() / $('.jiggy-boxes').width()) * 100 / 2;
+	var marginTop75 = ($('.jiggy-boxes').height() / $('.jiggy-boxes').width()) * 100 / 0.75;
+
+	$('.jiggy-boxes').css({
+		'position': 'fixed'
+	})
+	$('.jiggy-box').attr('tabindex', '1');
+	$('.jiggy-box').css({
+		'margin-left': '75%',
+		'width': '25%',
+		'height': '25%',
+		'margin-top': String(marginTop75 + '%')
+	})
 
 	$('.jiggy-box').on('click', function() {
 		$(this).focus();
-		
+
 		$('.jiggy-box').css({
 			'z-index': 0
 		});
