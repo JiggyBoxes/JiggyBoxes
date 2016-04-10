@@ -1,13 +1,14 @@
 (function() {
 
 	var marginTop = ($('.jiggy-boxes').height() / $('.jiggy-boxes').width()) * 100 / 2;
-	var marginTop75 = ($('.jiggy-boxes').height() / $('.jiggy-boxes').width()) * 100 / 0.75;
+	var marginTop75 = ($('.jiggy-boxes').height() / $('.jiggy-boxes').width()) * 100 / 1.25;
 
 	$('.jiggy-boxes').css({
 		'position': 'fixed'
 	})
 	$('.jiggy-box').attr('tabindex', '1');
 	$('.jiggy-box').css({
+		'position': 'absolute',
 		'margin-left': '75%',
 		'width': '25%',
 		'height': '25%',
